@@ -1,0 +1,38 @@
+.figure-container{
+    width: 60%;
+}
+
+.description-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.description-span{
+    color: var(--main-bg-color);
+}
+
+.description-p{
+    margin: 0;
+    width: 30rem;
+    padding: 1rem;
+    padding-left: 0rem;
+}
+
+.description-img{
+    width: 20rem;
+}
+
+.description-button{
+    display: flex;
+    background-color: var(--second-bg-color);
+    height: 1.8rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: small;
+    font-weight: light;
+}
