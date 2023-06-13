@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './NavBar.css'
 
 const underlineText = (active) => {
@@ -27,23 +28,15 @@ const NavBar = () => {
                 Inicio  
               </NavLink>
             </li>
-            <li>
-              <NavLink 
-                to='/acerca-de'
-                className={({ isActive}) =>
-                  underlineText(isActive)
-                }>
+            <li className='cursor-pointer'>
+              <Link to="/" activeClass="underline underline-offset-4" spy={true} smooth={true} offset={50} duration={500}>
                 Acerca de  
-              </NavLink>
+              </Link>
             </li>
-            <li>
-              <NavLink 
-                to='/servicios'
-                className={({ isActive}) =>
-                  underlineText(isActive)
-                }>
-                Servicios  
-              </NavLink>
+            <li className='cursor-pointer'>
+              <Link to="servicios" activeClass="underline underline-offset-4" spy={true} smooth={true} offset={50} duration={1500}>
+                Servicios
+              </Link>
             </li>
         </ul>
 

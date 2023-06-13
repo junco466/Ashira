@@ -54,7 +54,7 @@ function Home() {
         </div>
       </section>
 
-      <div className='w-3/4'>
+      <div className='w-3/4' id='servicios'>
         <section className='service-section w-full items-center'>
           {services.map((service) => <DescriptionCard service={service} key={`service-${service.id}`}/>)}
         </section>
