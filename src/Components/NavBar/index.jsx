@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css'
+import './NavBar.css'
 
 const underlineText = (active) => {
   return active ? 'underline underline-offset-4' : undefined;
