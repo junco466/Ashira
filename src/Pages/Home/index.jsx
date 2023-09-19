@@ -1,66 +1,56 @@
-import React from 'react'
-import DescriptionCard from '../../Components/DescriptionCard'
-import { services } from '../../db/Services';
+import React from "react";
+import DescriptionCard from "../../Components/DescriptionCard";
+import ServiceCard from "../../Components/ServiceCard";
+import Hero from "../../Components/Hero";
+import AcercaDe from "../../Components/AcercaDe";
+import ComentariosContainer from "../../Components/ComentariosContainer";
+import { services } from "../../db/Services";
 
-import logo from '../../assets/logos/1.png';
-import slogan from '../../assets/logos/2.png';
-import calendar from '../../assets/svg/calendar.svg';
-import laptop from '../../assets/svg/laptop.svg';
-import community from '../../assets/svg/community.svg';
-import hero from '../../assets/svg/hero.svg';
-import './Home.css';
+import "./Home.css";
+import { Mapa } from "../../Components/Mapa";
 
 function Home() {
   return (
     <>
-      <section className=' relative hero-section w-full'>
-        
-        <div className='text-center items-center m-auto'>
-          <img className="ashira-logo" src={logo} alt="hero-background" />
-          <img className="ashira-name" src={slogan} alt="hero-background" />
-          <h3 className="ashira-slogan">Prácticas holísticas para sanar los cuerpos físico, mental y emocional.</h3>
-        </div>
+      <section className=" relative hero-section w-full">
+        <Hero />
+      </section>
 
-        <div className='relative hero-bottom-container mb-40'>
-          
-          <div className='absolute bottom-28 left-60 bg-white flex justify-between items-center fast-service-box w-2/3 m-auto shadow-xl drop-shadow-xl'>
-          
-            <div className=' flex items-center justify-center fast-service-green-box'>
-              <h2 className='text-4xl w-48 text-white text-center'>Tu eres quien decide</h2>
-            </div>
-
-            <div className='w-48 flex flex-wrap items-center justify-center'>
-              <span className='fast-service-span text-center'>Consultas en linea o presenciales</span>
-              <img className='w-20 m-2 text-center' src={calendar} alt="agendar consultas" />
-              <span className='fast-service-span-lg'>Agenda tu cita</span>
-            </div>
-
-            <div className='w-48 flex flex-wrap items-center justify-center'>
-              <span className='fast-service-span'>Cursos en linea</span>
-              <img className='w-20 m-4' src={laptop} alt="curso en line" />
-              <span className='fast-service-span-lg'>Saber mas</span>
-            </div>
-
-            <div className='w-48 flex flex-wrap items-center justify-center'>
-              <span className='fast-service-span'>Eventos grupales</span>
-              <img className='w-20 m-4' src={community} alt="eventos grupales" />
-              <span className='fast-service-span-lg'>Saber mas</span>
-            </div>
-
-          </div>
-
-          <img className="hero-background" src={hero} alt="hero-background" />
-        
+      <section className="services-cards mb-40">
+        <div className="div-services-cards grid grid-cols-3 gap-1">
+          {services.map((service) => (
+            <ServiceCard service={service} key={`service-card-${service.id}`} />
+          ))}
         </div>
       </section>
 
-      <div className='w-3/4' id='servicios'>
+      <section className="w-3/4 mb-20" id="acerca_de">
+        <AcercaDe />
+      </section>
+
+      <section className="w-3/4 mb-20" id="servicios">
+        <div className="service-section w-full items-center">
+          {services.map((service) => (
+            <DescriptionCard service={service} key={`service-${service.id}`} />
+          ))}
+        </div>
+      </section>
+
+      <section className="comentarios w-3/4 mb-20">
+        <ComentariosContainer />
+      </section>
+
+      <section className="mapa w-full mb-20">
+        <Mapa />
+      </section>
+
+      {/* <div className='w-3/4' id='servicios'>
         <section className='service-section w-full items-center'>
           {services.map((service) => <DescriptionCard service={service} key={`service-${service.id}`}/>)}
         </section>
-      </div>
+      </div> */}
     </>
-  )
+  );
 }
 
 export default Home;

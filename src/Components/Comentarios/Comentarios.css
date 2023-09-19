@@ -1,0 +1,25 @@
+.comments-figure{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 23rem;
+}
+
+.comments-h1{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: large;
+    margin: auto;
+}
+
+.comments-p{
+    padding: 0rem 1rem 1rem 1rem;
+    
+}
+
+.fecha-p{
+    padding: 0rem 1rem 1rem 1rem;
+    color: var(--main-bg-color); 
+}

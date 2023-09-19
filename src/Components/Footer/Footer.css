@@ -1,0 +1,8 @@
+.footer-container{
+    height: 11rem;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    color: white;
+    justify-content: center;
+    text-align: center;
+}

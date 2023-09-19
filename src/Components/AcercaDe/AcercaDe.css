@@ -1,36 +1,27 @@
-.figure-container{
-    width: 100%;
-}
-
-.description-card-container{
+.acerca-de-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 4rem 10rem 4rem 10rem; 
 }
 
-.description-p{
-    margin: 0;
-    width: 30rem;
-    padding: 1rem;
-    padding-left: 0rem;
-}
-
-.description-img{
-    width: 20rem;
-}
-
-.description-button{
+.acerca-de-button{
     display: flex;
-    background-color: var(--second-bg-color);
+    background-color: var(--main-bg-color);
     height: 1.8rem;
-    width: 10rem;
+    width: 20rem;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
     color: white;
     font-size: small;
     font-weight: light;
+}
+
+.amparo-image{
+    border: 1rem solid var(--main-bg-color-light);
+    border-radius: 100%;
+    width: 20rem;
 }
 
 @media screen and (min-width: 768px) and (max-width:1200){

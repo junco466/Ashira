@@ -1,0 +1,45 @@
+    
+.ashira-logo{
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 15rem;
+}
+
+.ashira-name{
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 30rem;
+}
+
+.ashira-slogan{
+    margin: auto;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #727272;
+}
+
+.fast-service-green-box{
+    background-color: var(--second-bg-color-medium);
+    height: 12.5rem;
+    width: 11.8;
+}
+
+.fast-service-span{
+    color: var(--second-bg-color-medium);
+    font-weight: bold;
+}
+
+.fast-service-span-lg{
+    color: var(--second-bg-color-medium);
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1200){
+    
+
+}
+
+@media screen and (min-width: 767px){
+    
+
+}

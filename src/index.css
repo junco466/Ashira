@@ -9,5 +9,27 @@
     --second-bg-color: #596636;
     --second-bg-color-medium: #97A080;
     --second-bg-color-light: #BFC4A5;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Poppins', sans-serif; 
+}
+
+section{
+    max-width: 1600px;
+}
+
+span{
+    color: var(--main-bg-color);
+}
+
+h1{
+    color: var(--main-bg-color);
+}
+
+@media screen and (min-width: 768px) and (max-width:1200){
+    
+
+}
+
+@media screen and (min-width: 767px){
+    
+
 }
