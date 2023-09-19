@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-import estrella from "../../assets/svg/estrella.svg";
+import estrella from "../../assets/svg/Estrella.svg";
 import whatsapp from "../../assets/svg/whatsapp.svg";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
